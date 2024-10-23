@@ -1,1 +1,1 @@
-# blobs-k8s
+# playground for k8s, etcd, crictl container mgmt
