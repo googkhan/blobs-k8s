@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: myredis-replica10
+  name: myredis-replica10
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: myredis-replica10
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: myredis-replica10
+    spec:
+      containers:
+      - image: redis
+        name: redis
+        resources: {}
+status: {}

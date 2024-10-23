@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: mydep-nginx4
+  name: mydep-nginx4
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: mydep-nginx4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mydep-nginx4
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}

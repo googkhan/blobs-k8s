@@ -1,0 +1,2 @@
+clusterim-sahane
+# cat ~/.kube/config | grep current | sed -e s/current-context: //g > current-context.txt
